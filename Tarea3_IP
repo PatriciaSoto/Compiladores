@@ -1,0 +1,9 @@
+Obtener la expresión regular para las direcciones IP de la forma: 170.0.1.255 recordar que el valor máximo de cada octeto es 255
+
+unaCifra->[0-9]
+dosCifras-> unaCifra unaCifra
+tres cifras-> [0-1] unaCifra unaCifra|2 [0-4] unaCifra|25 [0-5]
+num->unaCifra|dosCifras|tresCifras
+ip->num.num.num.num
+
+
