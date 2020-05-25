@@ -20,6 +20,7 @@ P → id : R
 R → id R | ε
 
 Gramática 4:
-S → E
+S → ES'
+S' → S | ε
 E → while E  do E | id E’
 E’ → : = E | ε 
