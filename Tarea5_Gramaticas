@@ -1,0 +1,25 @@
+Gramática 1:
+S → TS’
+S’→+TS’| ε
+T→FT’
+T’→FT’| ε
+F → (S) 
+F → aF’
+F’ → T’ S’ * F’ | ε
+
+Gramática 2:
+L → SL’
+L’ → , S L’ | ε
+S → (L) | a
+
+Gramática 3:
+S → G
+G → PG’
+G’ → G | ε
+P → id : R
+R → id R | ε
+
+Gramática 4:
+S → E
+E → while E  do E | id E’
+E’ → : = E | ε 
