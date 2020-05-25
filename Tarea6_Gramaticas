@@ -1,0 +1,32 @@
+Gramática 1:
+0)	S’ → S
+1)	S → SS+
+2)	S → SS*
+3)	S → a
+
+Gramática 2:
+0)	S’ → S
+1)	S → V = E
+2)	E → V
+3)	E → n
+4)	V → id
+
+Gramática 3:
+0)	S’ → S
+1)	S → A
+2)	S → xb
+3)	A → aAb
+4)	A → B
+5)	B → x
+
+En esta gramática la cadena no es aceptada, ya que se evaluaron las siguientes opciones:
+S => A => aAb => aBb => axb
+S => A => aAb => aaAbb => aaBbb => aaxbb
+En ningún caso se acepta: axbb
+
+Gramática 4:
+0)	T’ → T
+1)	T → TF
+2)	T → F
+3)	F→ F*
+4)	F → a
